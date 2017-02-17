@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import static java.lang.Integer.parseInt;
 
 
-public class DataUtil {
+public class DataGameListUtill {
 
     static public class DataSAXParser extends DefaultHandler {
         ArrayList<Data> dataList = new ArrayList<Data>();
@@ -33,7 +33,6 @@ public class DataUtil {
         ArrayList<String> genres = new ArrayList<String>();
         int gCounter = 0;
         int sCounter = 0;
-        int imageReceived = 0;
 
 
         static public ArrayList<Data> parseData(InputStream in) {
@@ -67,12 +66,11 @@ public class DataUtil {
         public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
 
             super.startElement(uri, localName, qName, attributes);
-            if (sCounter == 0) {
                 if(localName.equals("Game")) {
                     data = new Data();
                     sCounter++;
                 }
-            }
+
 
 
 
@@ -84,7 +82,7 @@ public class DataUtil {
             super.endElement(uri, localName, qName);
 
             if(localName.equals("Game")) {
-
+                dataList.add(data);
             } else if (localName.equals("Genres")) {
                 data.setGenres(genres);
             } else if (localName.equals("Similar")) {
@@ -114,24 +112,8 @@ public class DataUtil {
                 } else if(localName.equals("Publisher")) {
                     // Log.d("UTIL", "IMAGE" + xmlInnerText.toString());
                     data.setPublisher(xmlInnerText.toString());
-                } else if(localName.equals("genre")) {
-                    genres.add(xmlInnerText.toString());
-                    Log.d("GENRES", "ADDED" + xmlInnerText.toString());
-                } else if (localName.equals("original")) {
-                    if(imageReceived == 0) {
-                        imageReceived++;
-                        data.setUrlToImage("http://thegamesdb.net/banners/" + xmlInnerText.toString().trim());
-                    }
-                } else if (localName.equals("Youtube")) {
-                    data.setTrailer(xmlInnerText.toString().trim());
                 }
 
-                if (sCounter > 1) {
-                    if (localName.equals("id")) {
-                        similar.add(xmlInnerText.toString().trim());
-                        Log.d("SIMILAR", "ADDED" + xmlInnerText.toString().trim());
-                    }
-                }
 
 
 

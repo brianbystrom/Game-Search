@@ -14,7 +14,15 @@ import java.util.ArrayList;
 
 public class Data {
     String title, releaseDate, platform, urlToImage, id, overview, publisher, trailer;
-    ArrayList<String> genres;
+    ArrayList<String> genres, similar;
+
+    public ArrayList<String> getSimilar() {
+        return similar;
+    }
+
+    public void setSimilar(ArrayList<String> similar) {
+        this.similar = similar;
+    }
 
     public String getTrailer() {
         return trailer;
@@ -98,7 +106,9 @@ public class Data {
                 ", id='" + id + '\'' +
                 ", overview='" + overview + '\'' +
                 ", publisher='" + publisher + '\'' +
-                ", genres=" + genres.size() +
+                ", youtube='" + trailer + '\'' +
+                ", genres=" + genres.size() + '\'' +
+                ", similar=" + similar.size() +
                 '}';
     }
 

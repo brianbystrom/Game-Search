@@ -48,7 +48,7 @@ public class GetGamesAsync extends AsyncTask<String, Void, ArrayList<Data>> {
             int statusCode = con.getResponseCode();
             if(statusCode == HttpURLConnection.HTTP_OK) {
                 InputStream in = con.getInputStream();
-                return DataUtil.DataSAXParser.parseData(in);
+                return DataGameListUtill.DataSAXParser.parseData(in);
             }
             //reader = new BufferedReader(new InputStreamReader(con.getInputStream()));
             //StringBuilder sb = new StringBuilder();

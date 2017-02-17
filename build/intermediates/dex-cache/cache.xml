@@ -3,6 +3,15 @@
 
     <item
         is-multidex="true"
+        jar="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.1_fc55b74957c2a5fda892825df6dfca65e2992cc8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/brianbystrom/Desktop/ITIS 4180/Game-Sarch/GameSearch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -12,21 +21,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/brianbystrom/Desktop/ITIS 4180/Game-Sarch/GameSearch/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar"
+        jar="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/brianbystrom/Desktop/ITIS 4180/Game-Sarch/GameSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.1_519fd32b6f21011f668dc9c607fd0d3e1f097419/classes.dex" />
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-8.4.0_dc475afcc81b25b57b9d8b9a5849f0a8b2654e94/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/brianbystrom/Desktop/ITIS 4180/Game-Sarch/GameSearch/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/jars/classes.jar"
+        jar="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
-        <dex dex="/Users/brianbystrom/Desktop/ITIS 4180/Game-Sarch/GameSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.1_bc798dedc770567083d61421cc265686062c24ca/classes.dex" />
+        sha1="0d678492818abc600c366ae883d767bc6128558b">
+        <dex dex="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a89273a10e405ba2e5c72e800d2a6bf5c74e1383/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -39,6 +48,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.1_7734a4272af23cf3e93170e7ed7227a7f486d9b8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/brianbystrom/Desktop/ITIS 4180/Game-Sarch/GameSearch/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
@@ -48,12 +66,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/brianbystrom/Desktop/ITIS 4180/Game-Sarch/GameSearch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/jars/classes.jar"
+        jar="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
-        <dex dex="/Users/brianbystrom/Desktop/ITIS 4180/Game-Sarch/GameSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-8.4.0_8925a3daec46f3600cd7ac53559777001f50ad0b/classes.dex" />
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-8.4.0_ee7335a44ec651a5ae896139f2d5b79443075a34/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -66,12 +84,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/brianbystrom/Desktop/ITIS 4180/Game-Sarch/GameSearch/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.1/jars/classes.jar"
+        jar="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
-        <dex dex="/Users/brianbystrom/Desktop/ITIS 4180/Game-Sarch/GameSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.1_5297938c327a93cd6b5805921cb4d79290e7a3c1/classes.dex" />
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.1_b9d7fd032c0194d962944f84e49a5b0fc96af2ac/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -81,6 +99,15 @@
         revision="25.0.2"
         sha1="ed903db4c60fcef31c49f1d9f6f1a2b5b8f53b1a">
         <dex dex="/Users/brianbystrom/Desktop/ITIS 4180/Game-Sarch/GameSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_9c7d36977b4a1e307484b8aea896bd81404f29bc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.1_40678f7d5bf59a40b85a3df3ab46a285affdee62/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -111,12 +138,111 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.1_3f412df10e555df54bc127b7790712f2431a321f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="98aedf25152b3a646d0db2df38135fcd8aa48bd4">
+        <dex dex="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_da441d65122d1f7b584c88135f57d55f02173948/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/brianbystrom/Desktop/ITIS 4180/Game-Sarch/GameSearch/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/brianbystrom/Desktop/ITIS 4180/Game-Sarch/GameSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.1_519fd32b6f21011f668dc9c607fd0d3e1f097419/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/brianbystrom/Desktop/ITIS 4180/Game-Sarch/GameSearch/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="/Users/brianbystrom/Desktop/ITIS 4180/Game-Sarch/GameSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.1_bc798dedc770567083d61421cc265686062c24ca/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/brianbystrom/Desktop/ITIS 4180/Game-Sarch/GameSearch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="/Users/brianbystrom/Desktop/ITIS 4180/Game-Sarch/GameSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-8.4.0_8925a3daec46f3600cd7ac53559777001f50ad0b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-8.4.0_2c8e96032106eed0f71c6e58b7b8967a337cfae7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.1_ff19c1c5580d84b6fe1c5462e066cedb9347b490/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/brianbystrom/Desktop/ITIS 4180/Game-Sarch/GameSearch/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="/Users/brianbystrom/Desktop/ITIS 4180/Game-Sarch/GameSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.1_5297938c327a93cd6b5805921cb4d79290e7a3c1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.1_cef1f0d2fd26491a2190f1ea0424bc3609cd3953/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.1_9c5f07b4d14bad07b45544f388da741f0d304d29/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/brianbystrom/Desktop/ITIS 4180/Game-Sarch/GameSearch/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
         <dex dex="/Users/brianbystrom/Desktop/ITIS 4180/Game-Sarch/GameSearch/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-8.4.0_55cfb74cdf2675d326601613ba236a3c6ba2c724/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="/Users/brianbystrom/Desktop/Game-Search/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.1_c1cf62c40fea25a8dbf6c25e41432bc8007ef6f7/classes.dex" />
     </item>
     <item
         is-multidex="true"
