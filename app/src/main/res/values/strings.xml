@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Game Search</string>
+    <string name="search_btn">Search</string>
+    <string name="go_btn">Go</string>
+    <string name="finish_btn">Finish</string>
+    <string name="similar_btn">Similar Games</string>
+    <string name="trailer_btn">Play Trailer</string>
+    <string name="overview_label">Overview:</string>
+</resources>
