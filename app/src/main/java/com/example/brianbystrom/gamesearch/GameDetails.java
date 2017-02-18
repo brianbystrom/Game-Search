@@ -107,6 +107,14 @@ public class GameDetails extends AppCompatActivity implements GetGameInfoAsync.I
         }
         genre.setText("Genre: " + genreString + "\nPublisher: " + s.get(0).getPublisher().toString());
 
+        if (s.get(0).getSimilar() == null) {
+            similar_btn.setEnabled(false);
+        }
+
+        if (s.get(0).getTrailer() == null) {
+            trailer_btn.setEnabled(false);
+        }
+
         if (s.get(0).getUrlToImage() != null) {
             new SetImageAsync(GameDetails.this).execute(s.get(0).getUrlToImage().toString());
         } else {
