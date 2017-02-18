@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import static android.text.TextUtils.isEmpty;
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
 
@@ -57,7 +58,13 @@ public class GameDetails extends AppCompatActivity implements GetGameInfoAsync.I
         overview = (ScrollView) findViewById(R.id.overview_scrollview);
         overview.removeAllViews();
 
-        String overviewText = s.get(0).getOverview().toString();
+        String overviewText = "";
+
+        if (s.get(0).getOverview() != null) {
+            overviewText = s.get(0).getOverview().toString();
+        } else {
+            overviewText = "None";
+        }
 
         TextView tv = new TextView(GameDetails.this);
         tv.setText(overviewText);
@@ -99,9 +106,29 @@ public class GameDetails extends AppCompatActivity implements GetGameInfoAsync.I
             genreString += genres.get(g).toString() + " ";
         }
         genre.setText("Genre: " + genreString + "\nPublisher: " + s.get(0).getPublisher().toString());
-        Log.d("DEMO", s.get(0).toString());
 
-        new SetImageAsync(GameDetails.this).execute(s.get(0).getUrlToImage().toString());
+        if (s.get(0).getUrlToImage() != null) {
+            new SetImageAsync(GameDetails.this).execute(s.get(0).getUrlToImage().toString());
+        } else {
+            pb = (ProgressBar) findViewById(R.id.game_detail_progress_bar);
+            ImageView game_image = (ImageView) this.findViewById(R.id.game_image);
+
+            title = (TextView) findViewById(R.id.game_title_label);
+            genre = (TextView) findViewById(R.id.genre_label);
+            overview = (ScrollView) findViewById(R.id.overview_scrollview);
+            overview_label = (TextView) findViewById(R.id.overview_label);
+
+            pb.setVisibility(GONE);
+            title.setVisibility(VISIBLE);
+            game_image.setVisibility(VISIBLE);
+            overview_label.setVisibility(VISIBLE);
+            overview.setVisibility(VISIBLE);
+            genre.setVisibility(VISIBLE);
+            finish_btn.setVisibility(VISIBLE);
+            trailer_btn.setVisibility(VISIBLE);
+            similar_btn.setVisibility(VISIBLE);
+
+        }
 
 
     }
