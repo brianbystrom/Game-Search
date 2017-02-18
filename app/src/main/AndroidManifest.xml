@@ -27,7 +27,8 @@
             android:value="@integer/google_play_services_version" />
 
         <activity android:name=".GameDetails" />
-        <activity android:name=".GameTrailer"></activity>
+        <activity android:name=".GameTrailer" />
+        <activity android:name=".SimilarGames"></activity>
     </application>
 
 </manifest>

@@ -68,9 +68,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/similar_btn"
-        android:gravity="center_vertical|center_horizontal|center"
         android:layout_below="@+id/trailer_btn"
-        android:layout_centerHorizontal="true"
         android:visibility="gone" />
 
     <Button
@@ -100,4 +98,5 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="188dp"
         android:id="@+id/game_detail_progress_bar" />
+
 </RelativeLayout>

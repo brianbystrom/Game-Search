@@ -74,17 +74,21 @@ public class GameDetails extends AppCompatActivity implements GetGameInfoAsync.I
             }
         });
 
+        similar_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("DEMO","CLICKING");
+                Intent toSimilarGames = new Intent(GameDetails.this, SimilarGames.class);
+                toSimilarGames.putExtra("SIMILAR_GAMES", s.get(0).getSimilar());
+                startActivity(toSimilarGames);
+            }
+        });
+
+
         finish_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
-            }
-        });
-
-        similar_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
             }
         });
 
@@ -98,6 +102,7 @@ public class GameDetails extends AppCompatActivity implements GetGameInfoAsync.I
         Log.d("DEMO", s.get(0).toString());
 
         new SetImageAsync(GameDetails.this).execute(s.get(0).getUrlToImage().toString());
+
 
     }
 
