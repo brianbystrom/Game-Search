@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    Assignment #: Homework 05
+    File Name: game_list_layout.xml
+    Group Members: Brian Bystrom, Mohamed Salad
+-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">

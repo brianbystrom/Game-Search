@@ -1,3 +1,9 @@
+/*
+Assignment #: Homework 05
+File Name: GameAdapter.java
+Group Members: Brian Bystrom, Mohamed Salad
+*/
+
 package com.example.brianbystrom.gamesearch;
 
 import android.content.Context;

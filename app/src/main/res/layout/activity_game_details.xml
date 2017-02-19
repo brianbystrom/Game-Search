@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Assignment #: Homework 05
+    File Name: activity_game_details.xml
+    Group Members: Brian Bystrom, Mohamed Salad
+-->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -68,6 +75,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/similar_btn"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:layout_centerHorizontal="true"
         android:layout_below="@+id/trailer_btn"
         android:visibility="gone" />
 

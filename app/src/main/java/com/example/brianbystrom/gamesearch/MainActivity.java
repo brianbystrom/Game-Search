@@ -1,3 +1,9 @@
+/*
+Assignment #: Homework 05
+File Name: MainActivity.java
+Group Members: Brian Bystrom, Mohamed Salad
+*/
+
 package com.example.brianbystrom.gamesearch;
 
 import android.content.Intent;
@@ -69,77 +75,81 @@ public class MainActivity extends AppCompatActivity implements GetGamesAsync.IDa
     }
 
     public void setupData(final ArrayList<Data> s) {
-        if (s != null) {
 
-            pb = (ProgressBar) findViewById(R.id.loading_progress_bar);
+        pb = (ProgressBar) findViewById(R.id.loading_progress_bar);
 
-
-            ListView lv = new ListView(MainActivity.this);
-            //ArrayAdapter<Data> adapter = new ArrayAdapter<Data>(this, android.R.layout.simple_list_item_1, s);
-            GameAdapter adapter = new GameAdapter(this, R.layout.game_list_layout, s);
-            lv.setAdapter(adapter);
-
-            lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                @Override
-                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                }
-            });
-
-            LinearLayout ll = new LinearLayout(MainActivity.this);
-            ll.setOrientation(LinearLayout.VERTICAL);
-            ll.removeAllViews();
-
-            RadioGroup rg = new RadioGroup(MainActivity.this);
-
-            for(int i = 0; i < s.size(); i++) {
-                RadioButton rb = new RadioButton(MainActivity.this);
-                rb.setMinimumWidth(300);
-                rb.setText(s.get(i).getTitle().toString() + ", Released in: " + s.get(i).getReleaseDate().toString() + ", Platform: " + s.get(i).getPlatform().toString());
-                rb.setTextSize(10);
-                rb.setId(Integer.parseInt(s.get(i).getId().toString().trim()));
-                Log.d("SET", "ID: " + s.get(i).getId());
-                rg.addView(rb);
-            }
-
-            rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(RadioGroup group, int checkedId) {
-                    selected = checkedId;
-                    Log.d("ID", "ID: " + checkedId);
-                }
-            });
-
-            ll.addView(rg);
-            lv.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
+        try {
+            if (s.size() > 0) {
 
 
-            ScrollView sv = (ScrollView) findViewById(R.id.game_list_scrollview);
-            sv.removeAllViews();
-            sv.addView(ll);
-            sv.setFillViewport(true);
+                ListView lv = new ListView(MainActivity.this);
+                //ArrayAdapter<Data> adapter = new ArrayAdapter<Data>(this, android.R.layout.simple_list_item_1, s);
+                GameAdapter adapter = new GameAdapter(this, R.layout.game_list_layout, s);
+                lv.setAdapter(adapter);
 
-            pb.setVisibility(GONE);
-            sv.setVisibility(VISIBLE);
+                lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-            go_btn = (Button) findViewById(R.id.go_btn);
-            go_btn.setEnabled(true);
-
-            go_btn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if(selected > -1) {
-                        Intent toGameDetails = new Intent(MainActivity.this, GameDetails.class);
-                        Log.d("SELECTED", "SELECTED: " + selected);
-                        toGameDetails.putExtra("GAME_ID", String.valueOf(selected));
-                        startActivity(toGameDetails);
                     }
+                });
+
+                LinearLayout ll = new LinearLayout(MainActivity.this);
+                ll.setOrientation(LinearLayout.VERTICAL);
+                ll.removeAllViews();
+
+                RadioGroup rg = new RadioGroup(MainActivity.this);
+
+                for (int i = 0; i < s.size(); i++) {
+                    RadioButton rb = new RadioButton(MainActivity.this);
+                    rb.setMinimumWidth(300);
+                    rb.setText(s.get(i).getTitle().toString() + ", Released in: " + s.get(i).getReleaseDate().toString() + ", Platform: " + s.get(i).getPlatform().toString());
+                    rb.setTextSize(10);
+                    rb.setId(Integer.parseInt(s.get(i).getId().toString().trim()));
+                    Log.d("SET", "ID: " + s.get(i).getId());
+                    rg.addView(rb);
                 }
-            });
+
+                rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(RadioGroup group, int checkedId) {
+                        selected = checkedId;
+                        Log.d("ID", "ID: " + checkedId);
+                    }
+                });
+
+                ll.addView(rg);
+                lv.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
 
 
-        } else {
-            //Log.d("DEMO","");
+                ScrollView sv = (ScrollView) findViewById(R.id.game_list_scrollview);
+                sv.removeAllViews();
+                sv.addView(ll);
+                sv.setFillViewport(true);
+
+                pb.setVisibility(GONE);
+                sv.setVisibility(VISIBLE);
+
+                go_btn = (Button) findViewById(R.id.go_btn);
+                go_btn.setEnabled(true);
+
+                go_btn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if (selected > -1) {
+                            Intent toGameDetails = new Intent(MainActivity.this, GameDetails.class);
+                            Log.d("SELECTED", "SELECTED: " + selected);
+                            toGameDetails.putExtra("GAME_ID", String.valueOf(selected));
+                            startActivity(toGameDetails);
+                        }
+                    }
+                });
+
+            }
+        } catch (Exception e) {
+            Log.d("Exception", e.toString());
+            Toast.makeText(MainActivity.this, "API timed out or results returned no games, please try again.", Toast.LENGTH_SHORT).show();
+            pb.setVisibility(GONE);
         }
     }
 

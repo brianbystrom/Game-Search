@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Assignment #: Homework 05
+    File Name: activity_game_trailer.xml
+    Group Members: Brian Bystrom, Mohamed Salad
+-->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_game_trailer"
@@ -10,11 +17,18 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.brianbystrom.gamesearch.GameTrailer">
 
+    <TextView
+        android:text="title_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_label" />
+
     <WebView
-        android:layout_width="fill_parent"
-        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:id="@+id/game_trailer"
+        android:layout_height="400dp"
+        android:layout_below="@+id/title_label"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/game_trailer"
-        android:layout_height="fill_parent" />
+        android:layout_marginTop="10dp" />
 </RelativeLayout>

@@ -1,7 +1,7 @@
 /*
-Assignment #: In Class 05
-File Name: DataUtil.java
-Group Members: Brian Bystrom
+Assignment #: Homework 05
+File Name: DataGameListUtill.java
+Group Members: Brian Bystrom, Mohamed Salad
 */
 
 package com.example.brianbystrom.gamesearch;
@@ -71,10 +71,6 @@ public class DataGameListUtill {
                     sCounter++;
                 }
 
-
-
-
-
         }
 
         @Override
@@ -92,31 +88,20 @@ public class DataGameListUtill {
             if(data != null) {
                 if(localName.equals("GameTitle")) {
                     data.setTitle(xmlInnerText.toString().trim());
-                    Log.d("UTIL", "TITLE" + xmlInnerText.toString());
                 } else if(localName.equals("ReleaseDate")) {
                     data.setReleaseDate((xmlInnerText.toString().trim()));
-                    //Log.d("UTIL", "PUB DATE" + xmlInnerText.toString());
                 } else if(localName.equals("Platform")) {
                     data.setPlatform(xmlInnerText.toString().trim());
-                    //Log.d("UTIL", "DESC" + xmlInnerText.toString());
                 } else if(localName.equals("id")) {
-                    // Log.d("UTIL", "IMAGE" + xmlInnerText.toString());
                     sCounter++;
                     data.setId(xmlInnerText.toString().trim());
                 } else if(localName.equals("Overview")) {
-                    // Log.d("UTIL", "IMAGE" + xmlInnerText.toString());
                     data.setOverview(xmlInnerText.toString().trim());
                 } else if(localName.equals("Genre")) {
-                    // Log.d("UTIL", "IMAGE" + xmlInnerText.toString());
-                    //data.setGenre(xmlInnerText.toString());
+
                 } else if(localName.equals("Publisher")) {
-                    // Log.d("UTIL", "IMAGE" + xmlInnerText.toString());
                     data.setPublisher(xmlInnerText.toString().trim());
                 }
-
-
-
-
 
             }
 

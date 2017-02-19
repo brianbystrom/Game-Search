@@ -1,7 +1,7 @@
 /*
-Assignment #: In Class 05
+Assignment #: Homework 05
 File Name: Data.java
-Group Members: Brian Bystrom
+Group Members: Brian Bystrom, Mohamed Salad
 */
 
 package com.example.brianbystrom.gamesearch;

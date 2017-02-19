@@ -1,7 +1,7 @@
 /*
-Assignment #: In Class 05
+Assignment #: Homework 05
 File Name: DataUtil.java
-Group Members: Brian Bystrom
+Group Members: Brian Bystrom, Mohamed Salad
 */
 
 package com.example.brianbystrom.gamesearch;
@@ -94,29 +94,20 @@ public class DataUtil {
             if(data != null) {
                 if(localName.equals("GameTitle")) {
                     data.setTitle(xmlInnerText.toString().trim());
-                    Log.d("UTIL", "TITLE" + xmlInnerText.toString());
                 } else if(localName.equals("ReleaseDate")) {
                     data.setReleaseDate((xmlInnerText.toString().trim()));
-                    //Log.d("UTIL", "PUB DATE" + xmlInnerText.toString());
                 } else if(localName.equals("Platform")) {
                     data.setPlatform(xmlInnerText.toString().trim());
-                    //Log.d("UTIL", "DESC" + xmlInnerText.toString());
                 } else if(localName.equals("id")) {
-                    // Log.d("UTIL", "IMAGE" + xmlInnerText.toString());
                     sCounter++;
                     data.setId(xmlInnerText.toString().trim());
                 } else if(localName.equals("Overview")) {
-                    // Log.d("UTIL", "IMAGE" + xmlInnerText.toString());
                     data.setOverview(xmlInnerText.toString());
                 } else if(localName.equals("Genre")) {
-                    // Log.d("UTIL", "IMAGE" + xmlInnerText.toString());
-                    //data.setGenre(xmlInnerText.toString());
                 } else if(localName.equals("Publisher")) {
-                    // Log.d("UTIL", "IMAGE" + xmlInnerText.toString());
                     data.setPublisher(xmlInnerText.toString().trim());
                 } else if(localName.equals("genre")) {
                     genres.add(xmlInnerText.toString().trim());
-                    Log.d("GENRES", "ADDED" + xmlInnerText.toString().trim());
                 } else if (localName.equals("original")) {
                     if(imageReceived == 0) {
                         imageReceived++;
@@ -129,7 +120,6 @@ public class DataUtil {
                 if (sCounter > 1) {
                     if (localName.equals("id")) {
                         similar.add(xmlInnerText.toString().trim());
-                        Log.d("SIMILAR", "ADDED" + xmlInnerText.toString().trim());
                     }
                 }
 

@@ -1,7 +1,7 @@
 /*
-Assignment #: In Class 05
-File Name: GetNewsAsync.java
-Group Members: Brian Bystrom
+Assignment #: Homework 05
+File Name: GetGamesAsync.java
+Group Members: Brian Bystrom, Mohamed Salad
 */
 
 package com.example.brianbystrom.gamesearch;
@@ -50,12 +50,7 @@ public class GetGamesAsync extends AsyncTask<String, Void, ArrayList<Data>> {
                 InputStream in = con.getInputStream();
                 return DataGameListUtill.DataSAXParser.parseData(in);
             }
-            //reader = new BufferedReader(new InputStreamReader(con.getInputStream()));
-            //StringBuilder sb = new StringBuilder();
-            //String line = "";
-            //while ((line = reader.readLine()) != null ) {
-            //  sb.append(line);
-            //}
+
         } catch (MalformedURLException e) {
             e.printStackTrace();
         } catch (IOException e) {
